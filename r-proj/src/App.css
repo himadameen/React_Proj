@@ -1,0 +1,19 @@
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+input{
+    text-align: center;
+}
+.select{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#crs{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
