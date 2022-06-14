@@ -22,15 +22,25 @@ const withFilter  = (InputComponent, data) => {
         //     coin.toLowerCase().includes(this.state.search.toLowerCase())
         // )
 
-        dd = (dat) => {
-            console.log("data from crypto" + dat)
+        dd = (data) => {
+            console.log("data from crypto" + data)
         }
 
         filterFunc = (event) => {
             console.log('inside filter fn...', event.target.value);
-            let tempArr = this.state.orglist && this.state.orglist.filter((item) => {
-                return item.toString().toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0;
-            });
+
+
+            let tempArr = this.state.orglist.map((item) => ( 
+                item.name.filter((filt) => (
+                    filt.toLowerCase().includes(event.target.value.toLowerCase())
+                    
+                    ))
+                    
+                    ))
+
+            // let tempArr = this.state.orglist && this.state.orglist.filter((item) => (
+            //     item.toString().toLowerCase().includes(item.name.toLowerCase())
+            // ));
             this.setState({
                 filterlist: tempArr,
                 tempinput: event.target.value,
