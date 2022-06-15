@@ -26,7 +26,11 @@ const Crypto = () => {
 
   return (
     <>
-        <input type='text' placeholder="Enter the Name" onChange={handleChange} /> 
+    <div id='cryp'>
+    <div id='input-box'>
+            <input type='text' placeholder="Enter the Coin Name" onChange={handleChange} />
+        </div>
+         
         <br></br>
          {filterCoins && filterCoins.map((item) => (
             <>
@@ -44,7 +48,9 @@ const Crypto = () => {
             }
             </div>
             </>
-         ))}
+         ))}    
+    </div>
+        
         
     </>
   )
