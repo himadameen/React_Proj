@@ -97,7 +97,7 @@ input{
     border-radius: 5px;
     padding: 10px;
     outline: none;
-    color: lavenderblush;
+    color: rgb(1, 1, 39);
     font-size: 1em;
     font-family: 'Orbitron', sans-serif;
     font-weight: 500 bold;
@@ -127,18 +127,21 @@ input:focus{
     border: 1px solid #00dfc4;
 }
 
-#cryp{
-    background-color: #354259;
+#cards{
+    display: flex;
 }
+/* #cryp{
+    background-color: #354259;
+} */
 
 #indSt{
-    display: flex;
-    flex-wrap: wrap;
+   
 
 }
+
 #indstt{
-    width: 100px;
-    /* margin: 10px; */
+    display: flex;
+    width: 100%;
 }
 
 h1{
@@ -162,6 +165,13 @@ h1{
    font-size: 1rem;
    letter-spacing: 0.5rem;
 }
+
+#ma{
+    color: violet;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5rem; 
+}
 #st:hover{
     color: #24A19C;
     transition: 0.5s;
@@ -173,16 +183,52 @@ h1{
     cursor: pointer;
 }
 
+#ma:hover{
+    color: #00dfc4;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
+.blue{
+    color: blue;
+}
 
+.lite{
+    color: lightgreen;
+}
 
+.voilet{
+    color: violet;
+}
+/* crypto */
 
+.image{
+    height: 40px;
+    width: 40px;
+    margin: 10px 50rem 10px 0;
+}
 
+#cname{
+    
+}
 
+table{
+    border: 1px solid black;
+    margin: 0 auto;
+}
 
+td{
+    /* border-bottom: 1px solid black; */
+}
 
+/* int stocks */
 
-
+#input-box1{
+    padding-bottom: 100px;
+    margin-left: 40%;
+    position: relative;
+    width: 350px;
+}
 
 
 

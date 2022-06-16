@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
+
 const Stock = () => {
 
   const [stock, setStock] = useState([])
@@ -25,35 +26,41 @@ const Stock = () => {
     api()
   }, [])
 
+  const sx = {
+    minWidth: '400px',
+    margin: '0 35px'
+  }
+
+  const sx2 = {
+    maxWidth: '400px',
+    margin: '20px 35px',
+  }
+
   return (
     <>
-    <h1>India's <span id='st'>Stock</span> <span id='m'>Market</span> Exchange</h1>
+    <h1>International <span id='st'>Stock</span> <span id='m'>Market</span> Exchange</h1>
       <div id='indSt'>
         <div id='indstt'>
-          {/* <BrowserRouter>
-          <Routes> */}
-        <Card sx={{ minWidth: 400 }}>
+        <Card sx={ sx }>
           <CardMedia
             component="img"
             height="200"
-            image="https://cdn.educba.com/academy/wp-content/uploads/2014/04/Stock-Market-in-india.jpg"
+            image="https://st3.depositphotos.com/1005233/14542/i/950/depositphotos_145423213-stock-photo-concept-of-business-international-network.jpg"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              India Top 10 Valuable Stock
+              Top International Stocks
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              This Shows You the top valuable in this Stocks which can boost visibility in the market and lift investor confidence.<br></br> Using cutting-edge technology also allows orders to be filled more efficiently, resulting in greater liquidity and<br></br> accurate prices.
+              The international stock market refers to all the international markets that negotiate stocks from their domestic companies it consists of several domestic and foreign mutual funds, banks, brokerages and institutions who buy and sell bonds from different markets.
             </Typography>
           </CardContent>
           <CardActions>
-            <br></br><br></br>
             <Button size="small">
-              <Link to='/top10value' className='top10ind-stock' >Learn More</Link></Button>
+              <Link to='/inter' className='top10ind-stock' >Learn More</Link></Button>
           </CardActions>
         </Card>
-        <br></br>
-        <Card sx={{ minWidth: 400 }}>
+        <Card sx={ sx }>
           <CardMedia
             component="img"
             height="200"
@@ -69,11 +76,11 @@ const Stock = () => {
           </CardContent>
           <CardActions>
             <br></br>
-            <Button size="small"><Link to='/topnifty' className='top10ind-stock' >Learn More</Link></Button>
+            <Button size="small"><Link to='/nifty' className='top10ind-stock' >Learn More</Link></Button>
           </CardActions>
         </Card>
         <br></br>
-        <Card sx={{ minWidth: 400 }}>
+        <Card sx={ sx }>
           <CardMedia
             component="img"
             height="200"
@@ -88,11 +95,14 @@ const Stock = () => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small"><Link to='/top10profit' className='top10ind-stock' >Learn More</Link></Button>
+            <Button size="small"><Link to='/profit' className='top10ind-stock' >Learn More</Link></Button>
           </CardActions>
         </Card>
-        <br></br>
-        <Card sx={{ minWidth: 400 }}>
+        <br/>
+        </div>
+        <br/>
+        <div id="cards">
+        <Card sx={ sx2 }>
           <CardMedia
             component="img"
             height="200"
@@ -107,12 +117,32 @@ const Stock = () => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small"><Link to='/top10loss' className='top10ind-stock' >Learn More</Link></Button>
+            <Button size="small"><Link to='/loss' className='top10ind-stock' >Learn More</Link></Button>
           </CardActions>
         </Card>
-        {/* </Routes>
-        </BrowserRouter> */}
-      </div>
+        <Card sx={ sx2 }>
+          <CardMedia
+            component="img"
+            height="200"
+            image="https://cdn.educba.com/academy/wp-content/uploads/2014/04/Stock-Market-in-india.jpg"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              India Top 10 Valuable Stock
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              This Shows You the top valuable in this Stocks which can boost visibility in the market and lift investor confidence.<br></br> Using cutting-edge technology also allows orders to be filled more efficiently, resulting in greater liquidity and<br></br> accurate prices.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            {/* <br></br><br></br> */}
+            <Button size="small">
+              <Link to='/valuetop' className='top10ind-stock' >Learn More</Link></Button>
+          </CardActions>
+        </Card>
+        
+      
+        </div>
       </div>
     </>
   )

@@ -33,7 +33,6 @@ const withFilter  = (InputComponent, data) => {
             let tempArr = this.state.orglist.map((item) => ( 
                 item.name.filter((filt) => (
                     filt.toLowerCase().includes(event.target.value.toLowerCase())
-                    
                     ))
                     
                     ))
