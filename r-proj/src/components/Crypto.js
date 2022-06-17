@@ -75,41 +75,101 @@ const Crypto = () => {
 </div>
 </>
   )
-
-       /* <table className='table-main'>
-         {filterCoins && filterCoins.map((item) => (
-            <>
-            <tr key={item.id}>
-            <td><div className='image'><img src={item.image}></img></div></td>
-            <td><div className='cname' id='cname'>{item.name}</div></td>
-            <td><div className='cp' id='cp'>${item.current_price}</div></td>
-            <td><div className='mcr' id='mcr'>{item.market_cap_rank}</div></td>
-            {item.price_change_percentage_24h < 0 ? (
-              <td><div  className='pcp red' >{item.price_change_percentage_24h.toFixed(2)}%</div></td>
-            ):(
-                <td><div  className='pcp green' >{item.price_change_percentage_24h}%</div></td>
-             )
-            }
-             </tr>
-        
-            
-            </>
-           
-         ))} 
-          </table>
-         </div>   
-    </div>
-        
-        
-        </> */
-//   )
 }
 
 export default Crypto;
 
 
-
 // *****************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
