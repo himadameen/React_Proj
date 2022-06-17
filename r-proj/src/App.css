@@ -44,7 +44,7 @@ h2 {
     align-items: center;
     font-size: 2em;
     z-index: 10;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
     letter-spacing: 0.1rem;
     border: 4px solid #000;
     border-radius: 15px;
@@ -63,16 +63,46 @@ h2 {
     padding-top: 80px;
 }
 
+#sllt {
+    background-image: linear-gradient(135deg, #EEAD92 10%, #6018DC 100%);
+    padding-bottom: 40px;
+}
+
 #crs {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 80%;
-   
+
 }
 
-#selectpg {
-    margin-top: 50px
+#am {
+    color: #001D6E;
+}
+
+#am:hover {
+    color: #00dfc4;
+}
+
+#slt_ {
+    color: lavenderblush;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: large;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#slt_:hover {
+    font-size: x-large;
+}
+
+#stck_bg {
+    background-image: linear-gradient(135deg, #1f4037 10%, #99f2c8 100%);
 }
 
 /* crypto-page */
@@ -84,14 +114,17 @@ h2 {
 .green {
     color: green;
 }
-#input-box{
+
+#input-box {
     padding-top: 50px;
     margin-left: 40%;
-    position: relative;
+    position: fixed;
     width: 280px;
+
 }
-input{
-    background-color:  white;
+
+input {
+    background-color: white;
     width: 100%;
     border: 2px solid rgb(1, 1, 39);
     border-radius: 5px;
@@ -104,7 +137,7 @@ input{
     text-transform: uppercase;
 }
 
-::placeholder{
+::placeholder {
     pointer-events: none;
     text-transform: uppercase;
     font-size: 1em;
@@ -113,7 +146,7 @@ input{
     color: grey;
 }
 
-input:focus::placeholder{
+input:focus::placeholder {
     color: #00dfc4;
     transform: translateX(10px) translateY(-22px);
     font-size: 0.65em;
@@ -123,28 +156,39 @@ input:focus::placeholder{
     letter-spacing: 0.1rem;
 }
 
-input:focus{
+input:focus {
     border: 1px solid #00dfc4;
 }
 
-#cards{
+#cards {
     display: flex;
 }
-/* #cryp{
-    background-color: #354259;
-} */
 
-#indSt{
-   
-
-}
-
-#indstt{
+#indstt {
     display: flex;
     width: 100%;
 }
 
-h1{
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    padding-top: 30px;
+}
+
+h3:hover {
+    font-size: 1.5rem;
+}
+
+#headd{
+    color: whitesmoke;
+}
+
+h1 {
     text-align: center;
     text-transform: uppercase;
     margin-top: 50px;
@@ -152,212 +196,147 @@ h1{
     font-family: 'Orbitron', sans-serif;
     font-size: 1rem;
     letter-spacing: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
-#st{
+
+h1:hover {
+    font-size: 1.5rem;
+}
+
+#no {
+    color: lavenderblush;
+    margin: 10%;
+}
+
+#st {
     color: purple;
     font-family: 'Orbitron', sans-serif;
     font-size: 1rem;
     letter-spacing: 0.5rem;
 }
-#m{
-   color: violet;
-   font-family: 'Orbitron', sans-serif;
-   font-size: 1rem;
-   letter-spacing: 0.5rem;
-}
 
-#ma{
+#m {
     color: violet;
     font-family: 'Orbitron', sans-serif;
     font-size: 1rem;
-    letter-spacing: 0.5rem; 
+    letter-spacing: 0.5rem;
 }
-#st:hover{
+
+#ma {
+    color: violet;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+#st:hover {
     color: #24A19C;
     transition: 0.5s;
     cursor: pointer;
 }
-#m:hover{
+
+#m:hover {
     color: #35858B;
     transition: 0.5s;
     cursor: pointer;
 }
 
-#ma:hover{
+#ma:hover {
     color: #00dfc4;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.blue{
+.blue {
     color: blue;
 }
 
-.lite{
+.lite {
     color: lightgreen;
 }
 
-.voilet{
+.voilet {
     color: violet;
 }
+
 /* crypto */
 
-.image{
-    height: 40px;
+#tab_crypto {
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+}
+
+.header {
+    color: white;
+}
+
+td>div {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.image img {
     width: 40px;
-    margin: 10px 50rem 10px 0;
+    height: 40px;
 }
 
-#cname{
-    
+.crypto-page {
+    background-image: linear-gradient(135deg, #1f4037 10%, #99f2c8 100%);
 }
 
-table{
-    border: 1px solid black;
-    margin: 0 auto;
-}
+/* stocks */
 
-td{
-    /* border-bottom: 1px solid black; */
-}
-
-/* int stocks */
-
-#input-box1{
-    padding-bottom: 100px;
+#input-box1 {
+    padding-bottom: 80px;
     margin-left: 40%;
     position: relative;
-    width: 350px;
+    width: 340px;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #clock {
-    display: flex;
-    justify-content: center;
+#tab_inter {
+    text-align: center;
 }
 
-
-#clock div {
-    position: relative;
-    margin: 1px;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0001);  
-}
-
-#clock div span {
-    position: relative;
-    display: block;
-    width: 100px;
-    height: 80px;
-    background-color:  #354259;
-    color: whitesmoke;
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    z-index: 10;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
-}
-
-#clock div span:nth-child(2){
-    height: 30px;
-    font-size: 0.7em;
-    letter-spacing: 0.2em;
-    font-weight: 500;
-    z-index: 9;
-    box-shadow: none;
-    background: #371B58;
+#inter_hd {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    font-size: large;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.5rem;
     text-transform: uppercase;
+    transition: 0.5s ease;
 }
 
-#clock div:last-child.span {
-    background: #251D3A;
+#inter_hd:hover {
+    font-size: x-large;
 }
 
-#first{
-    background-color: palevioletred;
-} */
+#inter-bg {
+    background-image: linear-gradient(135deg, #C33764 10%, #1D2671 100%);
+}
+
+.bd {
+    color: antiquewhite;
+}
+
+.thd {
+    color: white;
+}
+td{
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+td:hover{
+    padding: 25px;
+}

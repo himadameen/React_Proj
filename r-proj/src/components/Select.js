@@ -22,16 +22,11 @@ const Select = () => {
 
   setInterval(clock, 1000)
 
-
-
-
   return (
     <>
-      <div id='selectpg'>
+      <div id='sllt'>
         <div id='star'>
-          <div>
-            <h2>It's a Right Time To Know and Invest</h2>
-          </div>
+          <div id='slt_'>It's a Right <span id='am'>Time To Know</span> and Invest</div>
           <br></br>
           <div id='time'><span>{time}</span></div>
           <br></br>
@@ -41,7 +36,7 @@ const Select = () => {
             <Card sx={{ minWidth: 400 }}>
               <CardMedia
                 component="img"
-                height="200"
+                height="215"
                 image="https://th.bing.com/th/id/OIP.nGFB7pJRThI9-s6-VvSn7wHaFj?pid=ImgDet&rs=1"
               />
               <CardContent>

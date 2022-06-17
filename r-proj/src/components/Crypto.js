@@ -26,30 +26,71 @@ const Crypto = () => {
 
   return (
     <>
-    <div id='cryp'>
+    <div className='crypto-page ' id='cryp'>
+        <h3 id='headd'>Top <span id='ma'> Crypto</span> <span id='st'>Currency</span>  List</h3>
         <div id='cryp-coin'>
+            
         <div id='input-box'>
             <input type='text' placeholder="Enter the Coin Name" onChange={handleChange} />
         </div>
          
-        <br></br>
-        <table>
-         {filterCoins && filterCoins.map((item) => (
+        <br></br><br></br>
+    {
+        filterCoins.length > 0 ? (
+            <table class="table table-striped container" id="tab_crypto">
+    <thead>
+    <tr className='header'>
+      <th scope="col" className='head'>Logo</th>
+      <th scope="col" className='head'>Name</th>
+      <th scope="col" className='head'>Current Price</th>
+      <th scope="col" className='head'>Rank</th>
+      <th scope="col" className='head'>Market CAP</th>
+    </tr>
+  </thead>
+    {filterCoins && filterCoins.map((item) => (
             <>
-            <tbody>
-            <div key={item.id}>
-            <td><img  className='image' src={item.image}></img></td>
-            <td><div  id='cname'>{item.name}</div></td>
-            <td><div  id='cp'>${item.current_price}</div></td>
-            <td><div  id='mcr'>{item.market_cap_rank}</div></td>
+  <tbody>
+    <tr>
+      <th scope="row"><div className='image'><img src={item.image}></img></div></th>
+      <td><div className='cname' id='cname'>{item.name}</div></td>
+            <td><div className='cp' id='cp'>${item.current_price}</div></td>
+            <td><div className='mcr' id='mcr'>{item.market_cap_rank}</div></td>
             {item.price_change_percentage_24h < 0 ? (
               <td><div  className='pcp red' >{item.price_change_percentage_24h.toFixed(2)}%</div></td>
             ):(
-                <td><div  className='pcp green' >{item.price_change_percentage_24h.toFixed(2)}%</div></td>
+                <td><div  className='pcp green' >{item.price_change_percentage_24h}%</div></td>
              )
             }
-            </div>
-             </tbody>
+    </tr>
+  </tbody>
+    </>
+    ))}
+</table>
+        ) : (
+            <h1 id='no'>Their is No Such Coin Available</h1>
+        )
+    }    
+    
+</div>
+</div>
+</>
+  )
+
+       /* <table className='table-main'>
+         {filterCoins && filterCoins.map((item) => (
+            <>
+            <tr key={item.id}>
+            <td><div className='image'><img src={item.image}></img></div></td>
+            <td><div className='cname' id='cname'>{item.name}</div></td>
+            <td><div className='cp' id='cp'>${item.current_price}</div></td>
+            <td><div className='mcr' id='mcr'>{item.market_cap_rank}</div></td>
+            {item.price_change_percentage_24h < 0 ? (
+              <td><div  className='pcp red' >{item.price_change_percentage_24h.toFixed(2)}%</div></td>
+            ):(
+                <td><div  className='pcp green' >{item.price_change_percentage_24h}%</div></td>
+             )
+            }
+             </tr>
         
             
             </>
@@ -60,8 +101,8 @@ const Crypto = () => {
     </div>
         
         
-    </>
-  )
+        </> */
+//   )
 }
 
 export default Crypto;
