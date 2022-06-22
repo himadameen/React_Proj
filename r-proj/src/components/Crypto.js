@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
+// import './Responsive.css';
 
 const Crypto = () => {
 
@@ -37,7 +38,8 @@ const Crypto = () => {
         <br></br><br></br>
     {
         filterCoins.length > 0 ? (
-            <table class="table table-striped container" id="tab_crypto">
+          <div class='container'>
+            <table class="table table-striped" id="tab_crypto">
     <thead>
     <tr className='header'>
       <th scope="col" className='head'>Logo</th>
@@ -51,7 +53,7 @@ const Crypto = () => {
             <>
   <tbody>
     <tr>
-      <th scope="row"><div className='image'><img src={item.image}></img></div></th>
+      <th scope="row"><div className='image'><img src={item.image} alt='logo'></img></div></th>
       <td><div className='cname' id='cname'>{item.name}</div></td>
             <td><div className='cp' id='cp'>${item.current_price}</div></td>
             <td><div className='mcr' id='mcr'>{item.market_cap_rank}</div></td>
@@ -66,6 +68,7 @@ const Crypto = () => {
     </>
     ))}
 </table>
+</div>
         ) : (
             <h1 id='no'>Their is No Such Coin Available</h1>
         )

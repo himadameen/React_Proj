@@ -40,6 +40,8 @@ const withFilter  = (InputComponent, data) => {
             // let tempArr = this.state.orglist && this.state.orglist.filter((item) => (
             //     item.toString().toLowerCase().includes(item.name.toLowerCase())
             // ));
+
+            
             this.setState({
                 filterlist: tempArr,
                 tempinput: event.target.value,

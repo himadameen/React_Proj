@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1050px){
+    
+    /* open page */
+    #crs{
+        width: 100%;
+    }
+
+    #select{
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+    
+    /* open page */
+    #crs{
+        flex-direction: column;
+    }
+
+    /* input */
+    #input-box input{
+        width: 70%;
+    }
+
+    #input-box1 input{
+        width: 70%;
+    }
+
+    .container{
+        overflow-x: auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+   
+    /* open page */
+    #cds{
+        width: 300px;
+    }
+ 
+    .table{
+        width: 100%;
+    }
+
+}

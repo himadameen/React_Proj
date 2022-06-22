@@ -1,4 +1,5 @@
 import './App.css';
+import './Responsive.css';
 import Crypto from './components/Crypto';
 import Stock from './components/Stock';
 import Select from './components/Select';
@@ -12,7 +13,6 @@ import Inter from './components/Inter';
 function App() {
   return (
     <div className="App">
-      {/* <Valuetop/> */}
       <BrowserRouter>
        <Routes>
        <Route path='/inter' element={<Inter/>}/>

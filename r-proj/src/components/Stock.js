@@ -27,12 +27,12 @@ const Stock = () => {
   }, [])
 
   const sx = {
-    minWidth: '400px',
+    width: '400px',
     margin: '0 35px'
   }
 
   const sx2 = {
-    maxWidth: '400px',
+    width: '400px',
     margin: '20px 35px',
   }
 
@@ -80,7 +80,7 @@ const Stock = () => {
                 <Button size="small"><Link to='/nifty' className='top10ind-stock' >Learn More</Link></Button>
               </CardActions>
             </Card>
-            <br></br>
+            {/* <br></br> */}
             <Card sx={sx}>
               <CardMedia
                 component="img"
@@ -99,11 +99,11 @@ const Stock = () => {
                 <Button size="small"><Link to='/profit' className='top10ind-stock' >Learn More</Link></Button>
               </CardActions>
             </Card>
-            <br />
-          </div>
-          <br />
-          <div id="cards">
-            <Card sx={sx2}>
+            {/* <br /> */}
+          {/* </div> */}
+          {/* <br /> */}
+          {/* <div id="cards"> */}
+            <Card sx={sx}>
               <CardMedia
                 component="img"
                 height="200"
@@ -121,7 +121,7 @@ const Stock = () => {
                 <Button size="small"><Link to='/loss' className='top10ind-stock' >Learn More</Link></Button>
               </CardActions>
             </Card>
-            <Card sx={sx2}>
+            <Card sx={sx}>
               <CardMedia
                 component="img"
                 height="200"
@@ -141,8 +141,6 @@ const Stock = () => {
                   <Link to='/valuetop' className='top10ind-stock' >Learn More</Link></Button>
               </CardActions>
             </Card>
-
-
           </div>
         </div>
       </div>

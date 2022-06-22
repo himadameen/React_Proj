@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 
 
 const Select = () => {
-
+  
   let ti = new Date().toLocaleTimeString();
 
   const [time, setTime] = useState(ti);
@@ -33,7 +33,7 @@ const Select = () => {
         </div>
         <div id='select'>
           <div id='crs'>
-            <Card sx={{ minWidth: 400 }}>
+            <Card sx={{ Width: 400 }} id='cds'>
               <CardMedia
                 component="img"
                 height="215"
@@ -41,7 +41,7 @@ const Select = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Stock
+                  Stock Market
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Stock markets are vital components of a free-market economy <br></br>because they enable democratized access to trading and <br></br>exchange of capital for investors of all kinds.
@@ -52,7 +52,7 @@ const Select = () => {
               </CardActions>
             </Card>
             <br></br>
-            <Card sx={{ minWidth: 400 }}>
+            <Card sx={{ Width: 400 }} id='cds'>
               <CardMedia
                 component="img"
                 height="200"
