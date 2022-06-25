@@ -3,7 +3,10 @@ import React from 'react'
 const Nitfy = () => {
   return (
     <>
-    <div>Nitfy</div>
+    <div className="back">
+    <div id="cent">Nitfy</div>
+    <h1 id='no'>Processing</h1>
+    </div>
     </>
     
   )

@@ -12,20 +12,6 @@ import Typography from '@mui/material/Typography';
 
 const Stock = () => {
 
-  const [stock, setStock] = useState([])
-  const [search, setSearch] = useState('')
-
-
-  const api = async () => {
-    let url = await fetch('')
-    let data = await url.json()
-    setStock(data);
-  }
-
-  useEffect(() => {
-    api()
-  }, [])
-
   const sx = {
     width: '400px',
     margin: '0 35px'
@@ -80,7 +66,6 @@ const Stock = () => {
                 <Button size="small"><Link to='/nifty' className='top10ind-stock' >Learn More</Link></Button>
               </CardActions>
             </Card>
-            {/* <br></br> */}
             <Card sx={sx}>
               <CardMedia
                 component="img"
@@ -99,10 +84,6 @@ const Stock = () => {
                 <Button size="small"><Link to='/profit' className='top10ind-stock' >Learn More</Link></Button>
               </CardActions>
             </Card>
-            {/* <br /> */}
-          {/* </div> */}
-          {/* <br /> */}
-          {/* <div id="cards"> */}
             <Card sx={sx}>
               <CardMedia
                 component="img"
@@ -119,26 +100,6 @@ const Stock = () => {
               </CardContent>
               <CardActions>
                 <Button size="small"><Link to='/loss' className='top10ind-stock' >Learn More</Link></Button>
-              </CardActions>
-            </Card>
-            <Card sx={sx}>
-              <CardMedia
-                component="img"
-                height="200"
-                image="https://cdn.educba.com/academy/wp-content/uploads/2014/04/Stock-Market-in-india.jpg"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  India Top 10 Valuable Stock
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  This Shows You the top valuable in this Stocks which can boost visibility in the market and lift investor confidence.<br></br> Using cutting-edge technology also allows orders to be filled more efficiently, resulting in greater liquidity and<br></br> accurate prices.
-                </Typography>
-              </CardContent>
-              <CardActions>
-                {/* <br></br><br></br> */}
-                <Button size="small">
-                  <Link to='/valuetop' className='top10ind-stock' >Learn More</Link></Button>
               </CardActions>
             </Card>
           </div>

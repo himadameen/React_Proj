@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 
 
 
-const Select = () => {
+const Home = () => {
   
   let ti = new Date().toLocaleTimeString();
 
@@ -78,4 +78,4 @@ const Select = () => {
   )
 }
 
-export default Select
+export default Home;

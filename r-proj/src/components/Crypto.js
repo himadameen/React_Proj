@@ -6,6 +6,8 @@ const Crypto = () => {
 
     const [coin, setCoin] = useState([]);
     const [search, setSearch] = useState('');
+    const [error, SetError] = useState({});
+    const [er, SetEr] = useState(false);
 
     const api = async() => {
         let url = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=INR&order=market_cap_desc&per_page=100&page=1&sparkline=false')
@@ -18,12 +20,28 @@ const Crypto = () => {
     }, [])
 
     const handleChange = (e) => {
-        setSearch(e.target.value)
+        setSearch(e.target.value);
+        const err = validateForm(e.target.value);
+        SetError(err);
+       
     }
 
     const filterCoins = coin.filter(item => 
         item.name.toLowerCase().includes(search.toLowerCase())
+        
     ) 
+
+      // Error Handling ::
+
+    const validateForm = () => {
+      let err = {};
+      if(!search.match(/[A-Za-z]/)) {
+          err.search = "Please, Enter non - Digit Character"
+          SetEr(true); 
+      }
+      return err;
+  }
+
 
   return (
     <>
@@ -32,10 +50,13 @@ const Crypto = () => {
         <div id='cryp-coin'>
             
         <div id='input-box'>
-            <input type='text' placeholder="Enter the Coin Name" onChange={handleChange} />
+            <input type='text' placeholder="Enter the Coin Name" onChange={handleChange} value={search}  />
         </div>
-         
         <br></br><br></br>
+        {er && error.search ? (
+          <div id='err'>{error.search}</div>
+        ):(
+          <div>     
     {
         filterCoins.length > 0 ? (
           <div class='container'>
@@ -70,9 +91,13 @@ const Crypto = () => {
 </table>
 </div>
         ) : (
-            <h1 id='no'>Their is No Such Coin Available</h1>
+            <h1 id='no'>Their no such coin Available</h1> 
         )
-    }    
+    }
+          </div>
+        ) }
+        
+       
     
 </div>
 </div>

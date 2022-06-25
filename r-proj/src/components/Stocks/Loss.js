@@ -4,7 +4,10 @@ const Loss = () => {
     
   return (
     <>
-    <div>Loss</div>
+    <div className="back">
+    <div id="cent">Loss</div>
+    <h1 id='no'>Processing</h1>
+    </div>
     </>
     
   )

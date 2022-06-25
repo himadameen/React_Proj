@@ -112,7 +112,7 @@ h2 {
 }
 
 .green {
-    color: green;
+    color: #0b0bff;
 }
 
 #input-box {
@@ -296,6 +296,7 @@ td>div {
 }
 
 .crypto-page {
+    min-height: 100vh;
     background-image: linear-gradient(135deg, #1f4037 10%, #99f2c8 100%);
 }
 
@@ -331,6 +332,7 @@ td>div {
 }
 
 #inter-bg {
+    min-height: 100vh;
     background-color: #040418;
 }
 
@@ -359,3 +361,24 @@ td:hover{
     letter-spacing: 0.5rem;
     padding-bottom: 50px;
 } 
+
+#err{
+    padding-top: 100px;
+    color: red;
+    text-align: center;
+    font-size: medium;
+    letter-spacing: 0.5rem;
+}
+
+#cent{
+    padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+.back{
+    background: #1A1A40;
+    min-height: 100vh;
+}

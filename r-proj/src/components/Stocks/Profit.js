@@ -4,7 +4,10 @@ const Profit = () => {
     
   return (
     <>
-    <div>Profit</div>
+    <div className="back">
+    <div id="cent">Profit</div>
+    <h1 id='no'>Processing</h1>
+    </div>
     </>
     
   )
